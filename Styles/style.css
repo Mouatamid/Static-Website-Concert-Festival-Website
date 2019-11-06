@@ -1,0 +1,25 @@
+/* global styling */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+:root{
+  --primary: #30c957;
+  --secondary : #f56719;
+}
+.smooth-transition{
+  transition: all 2s ;
+}
