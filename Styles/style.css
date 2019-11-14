@@ -229,13 +229,15 @@ nav .container {
 
 @media(max-width : 1200px){
   .nav-list{
-    display: none; 
     flex-direction: column;
     order: 3;
     margin-left: auto;
     grid-column-start: 1;
     grid-column-end: end;
     margin-left: -30px;
+  }
+  .nav-list-mobile{
+    display: none;
   }
   .nav-item {
     text-transform: uppercase;
