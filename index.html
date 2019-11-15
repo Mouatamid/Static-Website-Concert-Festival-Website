@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Smartup Official Website</title>
     <link rel="stylesheet" href="./Styles/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <script
       src="https://kit.fontawesome.com/b2a29ea3e0.js"
       crossorigin="anonymous"
@@ -39,33 +44,42 @@
       </div>
     </header>
     <!-- Navbar -->
-    <nav>
+    <nav class="smooth-transition-nav">
       <div class="container">
         <a href="#"><img src="./Images/recources/logo.png" alt=""/></a>
         <div class="navbar">
           <ul class="nav-list">
-            <li><a href="#" class="nav-item smooth-transition">home</a>
-            <ul class="secondary-list">
-              <li class="smooth-transition"><a href="#">home one</a></li>
-              <li class="smooth-transition"><a href="#">home two</a></li>
-              <li class="smooth-transition"><a href="#">home three</a></li>
-            </ul></li>
+            <li>
+              <a href="#" class="nav-item smooth-transition">home</a>
+              <ul class="secondary-list">
+                <li class="smooth-transition"><a href="#">home one</a></li>
+                <li class="smooth-transition"><a href="#">home two</a></li>
+                <li class="smooth-transition"><a href="#">home three</a></li>
+              </ul>
+            </li>
             <li><a href="#" class="nav-item smooth-transition">about us</a></li>
             <li><a href="#" class="nav-item smooth-transition">services</a></li>
-            <li><a href="#" class="nav-item smooth-transition">events</a>
+            <li>
+              <a href="#" class="nav-item smooth-transition">events</a>
               <ul class="secondary-list">
-                  <li class="smooth-transition"><a href="#">event grid</a></li>
-                  <li class="smooth-transition"><a href="#">event list</a></li>
-                  <li class="smooth-transition"><a href="#">event schedule</a></li>
-                  <li class="smooth-transition"><a href="#">single event</a></li>
-                </ul></li>
-            <li><a href="#" class="nav-item smooth-transition">pages</a>
-            <ul class="secondary-list">
-              <li class="smooth-transition"><a href="#">pricing</a></li>
-              <li class="smooth-transition"><a href="#">faq</a></li>
-              <li class="smooth-transition"><a href="#">cooming soon</a></li>
-            </ul></li>
-            <li><a href="#" class="nav-item smooth-transition">blog</a>
+                <li class="smooth-transition"><a href="#">event grid</a></li>
+                <li class="smooth-transition"><a href="#">event list</a></li>
+                <li class="smooth-transition">
+                  <a href="#">event schedule</a>
+                </li>
+                <li class="smooth-transition"><a href="#">single event</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-item smooth-transition">pages</a>
+              <ul class="secondary-list">
+                <li class="smooth-transition"><a href="#">pricing</a></li>
+                <li class="smooth-transition"><a href="#">faq</a></li>
+                <li class="smooth-transition"><a href="#">cooming soon</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-item smooth-transition">blog</a>
               <ul class="secondary-list">
                 <li class="smooth-transition"><a href="#">blog one</a></li>
                 <li class="smooth-transition"><a href="#">blog two</a></li>
@@ -77,7 +91,7 @@
             <li><a href="#" class="nav-item smooth-transition">contact</a></li>
           </ul>
           <div class="hamburger-menu">
-              <a href="#"><i class="fas fa-bars"></i></a>
+            <a href="#"><i class="fas fa-bars"></i></a>
           </div>
           <div class="search-bar smooth-transition">
             <input type="text" name="search" id="search" placeholder="search" />
@@ -86,6 +100,71 @@
         </div>
       </div>
     </nav>
+    <!-- Main section -->
+    <section id="main" class="smooth-transition">
+      <div class="slide">
+        <div class="address">
+          <p class="street">
+            <i class="fas fa-map-marker-alt"></i> 9 street 305 bab fes, kenitra
+            14000
+          </p>
+          <p class="date">
+            <i class="far fa-calendar-alt"></i> sunday 30th, nov 2019
+          </p>
+        </div>
+        <h1 class="title">outdoor concert & festival</h1>
+        <h3 class="small-title">starting in</h3>
+        <span class="timer">00:00:00:00</span>
+        <button class="buy-ticket smooth-transition">
+          buy tickets online <i class="fas fa-long-arrow-alt-right"></i>
+        </button>
+      </div>
+      <div class="slide">
+        <div class="address">
+          <p class="street">
+            <i class="fas fa-map-marker-alt"></i> 9 street 305 bab fes, kenitra
+            14000
+          </p>
+          <p class="date">
+            <i class="far fa-calendar-alt"></i> sunday 30th, nov 2019
+          </p>
+        </div>
+        <h1 class="title">the awesome music festival</h1>
+        <h3 class="small-title">starting in</h3>
+        <span class="timer">00:00:00:00</span>
+        <button class="buy-ticket smooth-transition">
+          buy tickets online <i class="fas fa-long-arrow-alt-right"></i>
+        </button>
+      </div>
+      <div class="slide">
+        <h3 class="small-title">smartup is the best oppurtinity</h3>
+        <h1 class="title">speak in front of 1000+ people</h1>
+        <h3 class="small-title">start your speaker career now</h3>
+        <button class="buy-ticket smooth-transition">
+          register as a speaker <i class="fas fa-long-arrow-alt-right"></i>
+        </button>
+      </div>
+    </section>
     <script src="./Scripts/js.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#main").slick({
+          dots: false,
+          arrows: true,
+          prevArrow: '<button class="prev-arrow smooth-transition"><i class="fas fa-chevron-left"></i></button>',
+          nextArrow: '<button class="next-arrow smooth-transition"><i class="fas fa-chevron-right"></i></button>',
+          infinite: true,
+          swipe: false,
+          speed: 1000,
+          fade: true,
+          cssEase: "linear"
+        });
+      });
+    </script>
   </body>
 </html>

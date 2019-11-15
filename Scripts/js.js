@@ -11,7 +11,7 @@ inputSearch.addEventListener("blur", () => {
 
 //Nav on scroll
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 180) {
+  if (window.scrollY > 150 && window.innerWidth >= 1200) {
     nav.classList.add("navScroll");
   } else {
     nav.classList.remove("navScroll");
@@ -25,6 +25,7 @@ let navList = document.querySelector(".nav-list");
 window.addEventListener('resize', ()=>{
   if (window.innerWidth < 1200){
     navList.classList.add('nav-list-mobile');
+    listDisplayed = false;
   }
 })
 clickedMenu.addEventListener("click", () => {
