@@ -2,6 +2,7 @@
 let inputSearch = document.getElementById("search");
 let searchBar = document.getElementsByClassName("search-bar")[0];
 let nav = document.getElementsByTagName("nav")[0];
+let logo = document.querySelector("a.logo");
 inputSearch.addEventListener("focus", () => {
   searchBar.classList.add("search-barOnfocus");
 });
@@ -11,10 +12,15 @@ inputSearch.addEventListener("blur", () => {
 
 //Nav on scroll
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 150 && window.innerWidth >= 1200) {
+  if (window.scrollY > 150) {
+    if(window.innerWidth < 800){
+      nav.classList.remove("smooth-transition-nav");
+      logo.style.display = 'none';
+    }
     nav.classList.add("navScroll");
   } else {
     nav.classList.remove("navScroll");
+    logo.style.display = 'block';
   }
 });
 
@@ -40,3 +46,45 @@ clickedMenu.addEventListener("click", () => {
     }
   
 });
+//Planning
+
+let arrayIndex = ["item-one","item-two","item-three","item-four"];
+
+$(".planning-list a").click((e) => {
+  let cont = $("#planning .container .content-container");
+  e.preventDefault();
+  let img = $('.image-container img');
+  console.log(e.target);
+  for(let i = 0;i < arrayIndex.length;i++){
+    if(e.target.classList.contains(arrayIndex[i])){
+      var index = i;
+      break;
+    }
+  }
+  cont.fadeOut();
+  img.fadeOut(() => {
+    img.attr('src',`../Images/recources/planning-event/${index+1}.jpg`);
+  });
+  
+  img.fadeIn();
+  
+  
+  cont.fadeIn();
+})
+
+ let planningArray = document.querySelectorAll(".planning-list a");
+
+for(let i = 0;i < planningArray.length; i++){
+  planningArray[i].addEventListener('click', e => {
+    e.preventDefault();
+    for(let j = 0; j<planningArray.length; j++){
+      let icon = document.querySelector('.planning-list a i');
+      if(planningArray[j].classList.contains('active-item')){planningArray[j].removeChild(icon);}
+      planningArray[j].classList.remove('active-item');
+    }
+    e.target.classList.add('active-item');
+    e.target.innerHTML = '<i class="fas fa-circle"></i>' + e.target.innerHTML;
+    
+  })
+
+}

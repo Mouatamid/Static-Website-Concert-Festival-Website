@@ -46,7 +46,7 @@
     <!-- Navbar -->
     <nav class="smooth-transition-nav">
       <div class="container">
-        <a href="#"><img src="./Images/recources/logo.png" alt=""/></a>
+        <a href="#" class="logo"><img src="./Images/recources/logo.png" alt=""/></a>
         <div class="navbar">
           <ul class="nav-list">
             <li>
@@ -145,12 +145,102 @@
         </button>
       </div>
     </section>
-    <script src="./Scripts/js.js"></script>
+    <!-- Planning section -->
+    <section id="planning">
+      <div class="container">
+        <div class="image-container">
+          <img src="./Images/recources/planning-event/1.jpg" alt="">
+        </div>
+        <div class="content-container">
+          <h3>We are planning events</h3>
+          <ul class="events-type-list">
+            <li><a href="#">business</a></li>
+            <li><span>/</span></li>
+            <li><a href="#">sports</a></li>
+            <li><span>/</span></li>
+            <li><a href="#">outdoor</a></li>
+            <li><span>/</span></li>
+            <li><a href="#">musicals</a></li>
+            <li><span>/</span></li>
+            <li><a href="#">indoor</a></li>
+            <li><span>/</span></li>
+            <li><a href="#">parties</a></li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dicta assumenda consectetur alias. Soluta itaque labore quos accusantium quasi dolorum cupiditate placeat mollitia corrupti voluptatem iste, impedit laboriosam perspiciatis nemo facere quis! Debitis cumque distinctio natus molestiae officia expedita dicta sequi excepturi iste, perferendis alias sint ipsam sit eum. Culpa!</p>
+          <button class="smooth-transition">check our services</button>
+          <div class="planning-list">
+            <a href="#" class="planning-item active-item item-one"><i class="fas fa-circle"></i>event planning</a>
+            <a href="#" class="planning-item item-two">event management</a>
+            <a href="#" class="planning-item item-three">scheduling manager</a>
+            <a href="#" class="planning-item item-four">organization talent</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Upcoming Events section -->
+    <section id="upcoming-events">
+      <h1>upcoming events</h1>
+      <img src="./Images/recources/section-title-icon.png" alt="upcoming-events">
+      <div class="container">
+        <div class="event-list">
+          <div class="event">
+            <div class="image-container smooth-transition">
+              <div class="scale-div smooth-transition">
+                <button class="smooth-transition"><i class="fas fa-link"></i></button>
+              </div>
+            </div>
+            <div class="event-info">
+              <a href="#" class="smooth-transition"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut non rerum.</span></a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum quia voluptate, excepturi, quisquam, culpa fuga cupiditate quaerat repellendus officia vero minus fugiat aliquid est.</p>
+              <div class="more-info">
+                <div><i class="far fa-calendar-alt"></i><span>7th Jan, 2020</span></div>
+                <div><i class="fas fa-bookmark"></i><span>business event</span></div>
+              </div>
+            </div>
+            <button class="smooth-transition goto-event"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </div>
+          <div class="event">
+            <div class="image-container smooth-transition">
+              <div class="scale-div smooth-transition">
+                <button class="smooth-transition"><i class="fas fa-link"></i></button>
+              </div>
+            </div>
+            <div class="event-info">
+              <a href="#" class="smooth-transition" ><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut non rerum.</span></a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum quia voluptate, excepturi, quisquam, culpa fuga cupiditate quaerat repellendus officia vero minus fugiat aliquid est.</p>
+              <div class="more-info">
+                <div><i class="far fa-calendar-alt"></i><span>7th Jan, 2020</span></div>
+                <div><i class="fas fa-bookmark"></i><span>business event</span></div>
+              </div>
+            </div>
+            <button class="smooth-transition goto-event"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </div>
+          <div class="event">
+            <div class="image-container smooth-transition">
+              <div class="scale-div smooth-transition">
+                <button class="smooth-transition"><i class="fas fa-link"></i></button>
+              </div>
+            </div>
+            <div class="event-info">
+              <a href="#" class="smooth-transition"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut non rerum.</span></a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum quia voluptate, excepturi, quisquam, culpa fuga cupiditate quaerat repellendus officia vero minus fugiat aliquid est.</p>
+              <div class="more-info">
+                <div><i class="far fa-calendar-alt"></i><span>7th Jan, 2020</span></div>
+                <div><i class="fas fa-bookmark"></i><span>business event</span></div>
+              </div>
+            </div>
+            <button class="smooth-transition goto-event"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="./Scripts/js.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
         $("#main").slick({
