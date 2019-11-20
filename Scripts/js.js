@@ -88,3 +88,20 @@ for(let i = 0;i < planningArray.length; i++){
   })
 
 }
+
+//Weekly Schedule
+$(".main-schedule .slide-text").hide();
+$(".main-schedule .slide-text").eq(0).show();
+$(".main-schedule .title").on('click', function(e){
+  e.preventDefault();
+  $(this).next().slideToggle();
+})
+
+$(".days div.day").on('click', function(e){
+  e.preventDefault();
+  $(".days .active-day").removeClass("active-day");
+  $(this).addClass("active-day");
+  $(".main-schedules").fadeOut(200,function(){
+    $(".main-schedules").fadeIn();
+  })
+})

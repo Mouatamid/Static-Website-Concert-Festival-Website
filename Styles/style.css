@@ -610,3 +610,143 @@ button.prev-arrow{
   }
 
 }
+/* ********************************************* */
+/*weekly schedule*/
+#weekly-schedule{
+  background-color: #f5f4f4 ;
+  padding: 6em 0em; 
+}
+#weekly-schedule .first-div{
+  display: flex;
+  margin-bottom: 45px;
+}
+#weekly-schedule h1{
+  text-transform: capitalize;
+  font-size: 35px;
+  display: inline;
+}
+.download-schedule{
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #91a9bb ;
+  width: 200px;
+  border-radius: 30px;
+  font-size: 11px;
+  margin-left: auto;
+}
+.download-schedule:hover{
+  background-color: var(--primary);
+}
+#weekly-schedule .section-title-icon{
+  display: block;
+}
+.schedule{
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  grid-column-gap: 10px;
+}
+.schedule .days .day{
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 1em 0em;
+  cursor: pointer;
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #91a9bb;
+}
+.schedule .days .day span{
+  cursor: none;
+}
+.schedule .days div.active-day{
+  background-color: var(--primary);
+  color: #fff;
+}
+.main-schedules{
+  background-color: #fff;
+  padding: 20px;
+  color: #5f5f5f;
+  font-size: 12px;
+}
+.main-schedule{
+  padding-bottom: 30px;
+  border-left: 1px solid #9494947a;
+}
+.main-schedule .time{
+  margin-bottom: 20px;
+}
+.main-schedule .time i{
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: -11px;
+}
+.main-schedule .time span{
+  margin-left: 15px;
+}
+.main-schedule .title{
+  margin-left: 25px;
+  font-size: 16px;
+}
+.main-schedule .title:hover{color: var(--secondary);}
+.main-schedule .slide-text{
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.main-schedule .slide-text p{
+  line-height: 30px;
+}
+.main-schedule .speaker{
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+.main-schedule .speaker a{
+  text-transform: uppercase;
+  margin-left: 75px;
+  color: var(--secondary);
+}
+.main-schedule .speaker > span{
+  margin-left: 20px;
+}
+.main-schedule .speaker a span{
+  margin-right: 10px;
+  font-size: 13px;
+}
+.main-schedules .load-more{
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #91a9bb ;
+  width: 100px;
+  padding: 1em 0em;
+  opacity: 0.5;
+  border-radius: 30px;
+  font-size: 11px;
+  margin-left: -10px;
+}
+.main-schedules .load-more:hover{
+  background-color: var(--primary);
+  opacity: 1;
+}
+@media(max-width: 1020px){
+  .schedule{
+    grid-template-columns: 2fr 4fr;
+  }
+  #weekly-schedule .first-div{
+    flex-direction: column;
+  }
+  .download-schedule{
+    margin-left: 0px;
+    margin-top: 20px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
