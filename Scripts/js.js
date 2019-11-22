@@ -105,3 +105,12 @@ $(".days div.day").on('click', function(e){
     $(".main-schedules").fadeIn();
   })
 })
+
+//Speakers
+$("#speakers .speaker-highlight").hide();
+$("#speakers .speaker ").on("mouseenter",function(){
+  $(this).find(".speaker-highlight").slideToggle();
+  $("#speakers .speaker ").on("mouseleave",function(){
+    $(this).find(".speaker-highlight").slideUp();
+  })
+})

@@ -750,3 +750,75 @@ button.prev-arrow{
     padding-bottom: 1em;
   }
 }
+/* ********************************************* */
+/*Speakers*/
+#speakers{
+  padding: 6em 0em;
+  text-align: center;
+}
+#speakers h1{
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+#speakers p{
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #5f5f5f;
+  line-height: 32px;
+  width: 85%;
+}
+#speakers .speakers {
+  margin-top: 80px;
+}
+#speakers .speaker{
+  display: grid;
+  height: auto;
+}
+#speakers .speaker img{
+  width: 100%;
+}
+#speakers .speaker-highlight{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #27343ec0;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+#speakers .speaker-highlight .text{
+  text-align: left;
+}
+#speakers .speaker-highlight .text span{
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 12px;
+}
+#speakers .speaker-highlight .text h3{
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+#speakers .speaker-highlight button{
+  background-color: var(--primary);
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: .8em 1em;
+  border-radius: 3px;
+}
+#speakers button.chevron-left, #speakers button.chevron-right{
+  background-color: #252525;
+  border: none;
+  color: #fff;
+  margin-top: 20px;
+  padding: .9em;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#speakers button.chevron-left:hover, #speakers button.chevron-right:hover{
+  background-color: var(--primary);
+}
