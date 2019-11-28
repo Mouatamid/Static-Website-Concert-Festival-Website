@@ -989,3 +989,131 @@ a.read-more span{
     grid-template-columns: 1fr;
   }
 }
+/* ********************************************* */
+/*Footer*/
+.brands{
+  width: 85% !important;
+  padding: 4em 0em;
+  margin: auto !important;
+  /* display: flex;
+  justify-content: space-between; */
+  border-top: 1px solid #bdbdbd7e;
+}
+.brands .brand img{
+  width: 100%;
+}
+footer{
+  padding-top: 3em;
+  padding-bottom: 20px;
+  background-color: #27343e;
+  color: #fff;
+}
+footer .container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 30px;
+  padding-bottom: 4em;
+  border-bottom: 1px solid #bdbdbd34;
+}
+footer h3{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 200;
+}
+footer h3::after{
+  content: "";
+  display: block;
+  margin-top: 20px;
+  width: 40px;
+  height: 2px;
+  background: var(--primary);
+}
+.about-us p{
+  font-size: 12px;
+  line-height: 32px;
+  margin-top: 20px;
+}
+.quick-links .list{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.quick-links .list li{padding-bottom: 15px;}
+.quick-links .list a{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 200;
+}
+.quick-links .list a:hover{
+  color: var(--secondary);
+  margin-left: 5px;
+}
+.tweet{
+  margin-top: 20px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.tweet p{
+  margin-left: 10px;
+  font-weight: 200;
+  line-height: 32px;
+  margin-top: -12px;
+}
+.tweet span{
+  color: #91a9bb;
+}
+.tweet i{
+  color: #1DA1F2;
+}
+.subscribe-newsletter form{
+  margin-top: 20px;
+}
+.subscribe-newsletter input{
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  background-color: #384854;
+  color: #bccad4;
+  border: none;
+  font-size: 11px;
+  font-style: italic;
+  width: 100%;
+}
+.subscribe-newsletter input:focus{
+  background-color: #35536a;
+}
+.subscribe-newsletter button{
+    text-transform: uppercase;
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    background-color: var(--primary);
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+}
+.subscribe-newsletter button span{
+  margin-left: 15px;
+}
+.subscribe-newsletter button:hover{
+  background-color: var(--secondary);
+}
+footer .credits{
+  display: block;
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+  color: #91a9bb;
+}
+@media(max-width: 980px){
+  footer .container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 760px){
+  footer .container{
+    width: 70%;
+    grid-template-columns: 1fr;
+  }
+}

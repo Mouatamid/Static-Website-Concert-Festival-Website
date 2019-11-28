@@ -745,6 +745,99 @@
         </div>
       </div>
     </section>
+    <!-- Footer -->
+    <div class="brands owl-carousel owl-theme">
+      <div class="brand item">
+        <a href="#"><img src="./Images/brand/1.png" alt=""></a>
+      </div>
+      <div class="brand item">
+        <a href="#"><img src="./Images/brand/2.png" alt=""></a>
+      </div>
+      <div class="brand item">
+        <a href="#"><img src="./Images/brand/3.png" alt=""></a>
+      </div>
+      <div class="brand item">
+        <a href="#"><img src="./Images/brand/4.png" alt=""></a>
+      </div>
+      <div class="brand item">
+        <a href="#"><img src="./Images/brand/5.png" alt=""></a>
+      </div>
+      <div class="brand item">
+        <a href="#"><img src="./Images/brand/1.png" alt=""></a>
+      </div>
+      <div class="brand item">
+        <a href="#"><img src="./Images/brand/2.png" alt=""></a>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="about-us">
+          <h3>about us</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere possimus officiis odit sit a repellendus deserunt velit doloremque mollitia illum sapiente culpa, in molestiae est! Quos iste accusamus nam impedit quaerat magni. Saepe quos neque sapiente hic voluptates itaque quo?</p>
+        </div>
+        <div class="quick-links">
+          <h3>quicklinks</h3>
+          <div class="list">
+            <ul>
+              <li><a href="#" class="smooth-transition">
+                our company
+              </a></li>
+              <li><a href="#" class="smooth-transition">
+                our philosophy
+              </a></li>
+              <li><a href="#" class="smooth-transition">
+                monthly statistics
+              </a></li>
+              <li><a href="#" class="smooth-transition">
+                marketing strategies
+              </a></li>
+              <li><a href="#" class="smooth-transition">
+                our services
+              </a></li>
+            </ul>
+            <ul>
+              <li><a href="#" class="smooth-transition">
+                support forums
+              </a></li>
+              <li><a href="#" class="smooth-transition">
+                FAQ & help center
+              </a></li>
+              <li><a href="#" class="smooth-transition">
+                Register an account
+              </a></li>
+              <li><a href="#" class="smooth-transition">
+                login with account
+              </a></li>
+              <li><a href="#" class="smooth-transition">
+                careers
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="twitter-feed">
+          <h3>twitter feed</h3>
+          <div class="tweet">
+            <i class="fab fa-twitter"></i>
+            <p>@smartup consetetur sadipscing elitr, sed diam nonumy... <br><span># 2 hours ago
+            </span></p>
+          </div>
+          <div class="tweet">
+            <i class="fab fa-twitter"></i>
+            <p>@smartup consetetur sadipscing elitr, sed diam nonumy... <br><span># 2 hours ago
+            </span></p>
+          </div>
+        </div>
+        <div class="subscribe-newsletter">
+          <h3>subscribe newsletter</h3>
+          <form action="">
+            <input type="text" placeholder="enter your name">
+            <input type="email" placeholder="enter your email">
+            <button class="smooth-transition">subscribe now<span>></span></button>
+          </form>
+        </div>
+      </div>
+      <span class="credits">Copyright 2020 © Mouatamid El Arquam | All Rights Reserved</span>
+    </footer>
     
 
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -784,6 +877,25 @@
             },
             1000: {
               items: 6
+            }
+          }
+        });
+        $(".brands").owlCarousel({
+          loop: true,
+          margin: 50,
+          nav: false,
+          dots: false,
+          autoplay: true,
+          autoWidth: true,
+          responsive: {
+            0: {
+              items: 2
+            },
+            600: {
+              items: 3
+            },
+            1000: {
+              items: 5
             }
           }
         });
